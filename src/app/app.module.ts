@@ -4,10 +4,19 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { TopnavComponent } from './topnav/topnav.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { LoginmodalComponent } from './loginmodal/loginmodal.component';
+import { GenrecatComponent } from './genrecat/genrecat.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopnavComponent,
+    CarouselComponent,
+    LoginmodalComponent,
+    LoginmodalComponent,
+    GenrecatComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,77 @@
+#popUpSignin {
+    z-index: 10000000000;
+}
+
+.modal-content {
+    top: 140px;
+    box-shadow: 0px 1px 2px 1px #888888;
+    position: relative; left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 350px;
+}
+.close {
+    padding-right: 60px;
+}
+.login-logo {
+    margin-left: 60px;
+}
+.signin-title p {
+    position: absolute;
+    font-family: OpenSans;
+    font-size: 28px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.87);
+    right: 259px;
+    top: -41px;
+}
+.signinwith {
+    display: flex;
+}
+.signinwith p {
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    text-align: left;
+    color: #ffffff;
+    margin: 15px 0 12px 5px;
+}
+
+.social {
+    font-size: 30px;
+    margin: 12px 12px 12px 40px;   
+}
+
+.signinwith__facebook {
+    width: 300px;
+    height: 60px;
+    background-color: #3970b0;
+    color: white;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    border: none;
+    right: 60px;
+    top: 60px;
+}
+
+.signinwith__google {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    background-color: #ff0d0d; 
+    color: white;
+    display: flex;
+    border: none;
+    right: 60px;
+    top: 160px;
+}
