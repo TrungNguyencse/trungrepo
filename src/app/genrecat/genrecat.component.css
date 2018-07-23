@@ -12,8 +12,8 @@
 }
 .row p {
     font-size: 12px;
-    padding-top: 25px;
-    padding-left: 12px;
+    padding-top: 35px;
+    padding-left: 20px;
 }
 .row {
     display: flex;
@@ -29,6 +29,7 @@
 }
 .genre {
     padding-left: 90px;
+    padding-bottom: 40px;
 }
 .categories {
     padding: 16px 0 30px 40px;
