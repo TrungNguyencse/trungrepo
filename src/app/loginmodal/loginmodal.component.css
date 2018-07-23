@@ -62,8 +62,14 @@
     border: none;
     right: 60px;
     top: 60px;
+    cursor: pointer;
 }
-
+.signinwith__facebook:hover {
+    background-color: #1154a0;
+}
+.signinwith__facebook:active {
+    background-color: #104179;
+}
 .signinwith__google {
     position: absolute;
     width: 300px;
@@ -74,4 +80,14 @@
     border: none;
     right: 60px;
     top: 160px;
+    cursor: pointer;
+}
+.signinwith__google:hover {
+    background-color: #c01010;
+}
+.signinwith__facebook:hover, .signinwith__google:focus {
+    outline: none;
+}
+.signinwith__google:active {
+    background-color: #921616;
 }

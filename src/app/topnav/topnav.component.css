@@ -8,11 +8,11 @@
 }
 
 .navbar-brand {
-    padding-left: 40px;
+    padding-left: 100px;
 }
 
 .top-nav__searchcontainer {
-    margin-left: 50%; /*media*/
+    margin-left: 40%; /*media*/
     display: flex;
     margin-top: 12px;
     width: 340px;
