@@ -1,7 +1,7 @@
 .category-tittle {
     display: flex;
 }
-.trending {
+.category-name {
     font-size: 24px;
     font-weight: bold;
     letter-spacing: -0.4px;
@@ -15,7 +15,7 @@
     text-align: left;
     color: #ffffff;
     padding-top: 59px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 /*video gallery */
 li {
