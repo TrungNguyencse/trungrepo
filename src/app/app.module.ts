@@ -9,6 +9,10 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { LoginmodalComponent } from './loginmodal/loginmodal.component';
 import { GenrecatComponent } from './genrecat/genrecat.component';
 import { TrendingComponent } from './trending/trending.component';
+import { WhatnewComponent } from './whatnew/whatnew.component';
+import { RecommendedComponent } from './recommended/recommended.component';
+import { ChannelComponent } from './channel/channel.component';
+import { LikedvideoComponent } from './likedvideo/likedvideo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { TrendingComponent } from './trending/trending.component';
     LoginmodalComponent,
     LoginmodalComponent,
     GenrecatComponent,
-    TrendingComponent
+    TrendingComponent,
+    WhatnewComponent,
+    RecommendedComponent,
+    ChannelComponent,
+    LikedvideoComponent
   ],
   imports: [
     BrowserModule,
