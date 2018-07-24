@@ -8,6 +8,7 @@ import { TopnavComponent } from './topnav/topnav.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { LoginmodalComponent } from './loginmodal/loginmodal.component';
 import { GenrecatComponent } from './genrecat/genrecat.component';
+import { TrendingComponent } from './trending/trending.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GenrecatComponent } from './genrecat/genrecat.component';
     CarouselComponent,
     LoginmodalComponent,
     LoginmodalComponent,
-    GenrecatComponent
+    GenrecatComponent,
+    TrendingComponent
   ],
   imports: [
     BrowserModule,

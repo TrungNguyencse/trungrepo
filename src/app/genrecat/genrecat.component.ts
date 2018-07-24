@@ -15,6 +15,7 @@ export class GenrecatComponent implements OnInit {
           $("#cbp-hrsub-hide").slideToggle();
           $('#dropdown-trigger').toggleClass("dropdown-trigger-hide");
           $('#dropdown-trigger').toggleClass("dropdown-trigger");
+          $('#dropdown-trigger').toggleClass("whitebackground");
           $('#caret').toggleClass("fa-caret-down");
           $('#caret').toggleClass("fa-caret-up");
       });

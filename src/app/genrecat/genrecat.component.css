@@ -1,3 +1,6 @@
+.cbp-hrmenu {
+    background-color: #212121;
+}
 .cbp-hrsub {
     clear: both;
     line-height: 1;
@@ -6,6 +9,10 @@
 }
 .hide {
     display: none;
+    background-color: white;
+}
+.whitebackground {
+    background-color: white;
 }
 .dropdown-submenu {
     display: flex;

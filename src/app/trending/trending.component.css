@@ -1,0 +1,99 @@
+.category-tittle {
+    display: flex;
+}
+.trending {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -0.4px;
+    text-align: left;
+    color: #07bdbb;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.hashtag p {
+    font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    padding-top: 59px;
+    padding-left: 10px;
+}
+/*video gallery */
+li {
+    list-style: none;
+  }
+  
+  .boxCarousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .boxCarousel i {
+    font-size: 1rem;
+    position: absolute;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .boxCarousel #left {
+    left: 1%;
+    z-index: 998;
+  }
+  
+  .boxCarousel #right {
+    right: 1%;
+    z-index: 998;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 90%;
+    margin: 0 1%;
+  }
+  
+  .carousel ul {
+    padding: 0;
+    display: flex;
+    width: 400%;
+    margin-left: 0;
+  }
+  
+  .carousel ul li {
+    width: 500px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 40px;
+  }
+  
+  .carousel .imgCont{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #333;
+  }
+  
+  .carousel h4{
+    width: 100%;
+    text-align: left;
+    bottom: 0;
+    color: #fff;
+    margin: 0;
+    padding: .5rem 0;
+  }
+  
+  .screenBox .screen {
+    padding: 0 2.5rem;
+  }
+  
+  .screenBox h4 {
+    padding: 2.5rem 0;
+    text-align: center;
+  }
+  .movie-description {
+    height: 50%;
+    position: absolute;
+    bottom: -30px;
+  }
+  .movie-description p {
+      color: white;
+  }

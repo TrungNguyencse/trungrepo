@@ -1,3 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './style/bootstrap-4.1.2-dist/css/bootstrap.min.css';
 @import './style/font-awesome-4.7.0/css/font-awesome.min.css';
+body {
+    background-color: #212121;
+}
