@@ -1,11 +1,11 @@
 .category-tittle {
     display: flex;
-    padding-top: 30px;
 }
 .movie-list a {
     margin: auto;
     width: 15%;
     text-decoration: none;
+    position: relative;
 }
 .movie-list-item p {
     margin-bottom: 0;
@@ -39,7 +39,6 @@
     display: flex;
 }
 .movie-list-item {
-    height: 360px;
     margin: auto;
 }
 .movie-list-item img {
@@ -73,16 +72,32 @@
     letter-spacing: -0.3px;
     text-align: left;
     color: white;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 /*Movie detail that pops up when hovered */
 .movie-detail {
+    position: absolute;
+    top: 0;
     background: black;
-    width: 20%;
     height: 344px;
     color: white;
-    display: none;
+}
+.sypnosis {
+    display: flex;
+    padding: 10px 0 0 10px;
+}
+.sypnosis h5 {
+    padding-left: 15px;
 }
 .movie-detail img {
-    width: auto;
+    width: 12%;
+    height: 12%;
+}
+.movie-detail p {
+    font-size: 12px;
+    text-align: left; 
+    margin: 8px;   
+}
+.hide {
+    display: none;
 }

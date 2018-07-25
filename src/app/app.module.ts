@@ -13,6 +13,7 @@ import { WhatnewComponent } from './whatnew/whatnew.component';
 import { RecommendedComponent } from './recommended/recommended.component';
 import { ChannelComponent } from './channel/channel.component';
 import { LikedvideoComponent } from './likedvideo/likedvideo.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { LikedvideoComponent } from './likedvideo/likedvideo.component';
     WhatnewComponent,
     RecommendedComponent,
     ChannelComponent,
-    LikedvideoComponent
+    LikedvideoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
