@@ -62,6 +62,7 @@
 }
 .viewcount p {
     margin-top: 5px;
+    font-size: 12px;
 }
 #movie-name {
     font-size: 18px;
@@ -73,6 +74,10 @@
     text-align: left;
     color: white;
     padding-top: 10px;
+    transition: color 0.5s;
+}
+#movie-name:hover {
+    color: #039bb3;
 }
 /*Movie detail that pops up when hovered */
 .movie-detail {

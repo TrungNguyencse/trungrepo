@@ -48,6 +48,10 @@
 .para-row {
     display: flex;
 }
+.para a {
+    text-decoration: none;
+    color: black;
+}
 .row2 {
     padding-top: 20px;
 }
@@ -72,7 +76,8 @@
     font-size: 17px;
     font-weight: bold;
     color: black;
-    padding: 10px 0 10px 100px; 
+    padding: 10px 0 10px 100px;
+    transition: font-size 0.5s;
 }
 .dropdown-trigger-hide p {
     font-size: 17px;

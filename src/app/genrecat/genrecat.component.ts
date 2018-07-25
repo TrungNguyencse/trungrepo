@@ -20,5 +20,13 @@ export class GenrecatComponent implements OnInit {
           $('#caret').toggleClass("fa-caret-up");
       });
   });
+      /*Smooth Scrolling*/
+    $(function() {
+      $("a[href*='#']:not([href='#'])").click(function() {
+        var target = $(this).attr("href");
+        $('html,body').stop().animate({scrollTop: $(target).offset().top}, 1000);
+        event.preventDefault();
+  });
+});
 }
 }

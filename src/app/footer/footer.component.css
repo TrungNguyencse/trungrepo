@@ -19,6 +19,9 @@
     color: white;
     text-decoration: none;  
 }
+.footer-menu a:hover {
+    color:  #039bb3;
+}
 .footer-menu li {
     margin:40px 20px;
 }
@@ -43,6 +46,10 @@
     margin-left: 20px;
     width: 36px;
     height: 36px;
+    transition: background-color 0.3s;
+}
+.social-contact a:hover {
+    background-color: #087080;
 }
 .social-contact a span {
     color: white;
