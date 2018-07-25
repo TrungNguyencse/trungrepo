@@ -16,10 +16,6 @@ export class WhatnewComponent implements OnInit {
     $(window).resize(function(){
       $(".movie-detail").css({'height':($(".movie-thumbnail").height()+'px')});
     })
-    /*$('.movie-list a').mouseover(function(){
-      $('.movie-thumbnail').toggleClass('hide');  
-      $('.movie-detail').toggleClass('hide');    
-    })*/
   }
 
 }

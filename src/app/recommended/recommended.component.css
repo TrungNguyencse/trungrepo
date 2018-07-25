@@ -81,6 +81,8 @@
     background: black;
     height: 344px;
     color: white;
+    opacity: 0;
+    transition: .5s ease;
 }
 .sypnosis {
     display: flex;
@@ -98,6 +100,9 @@
     text-align: left; 
     margin: 8px;   
 }
-.hide {
-    display: none;
+.movie-list a:hover .movie-list-item img {
+    opacity: 0.4;
+}
+.movie-list a:hover .movie-detail {
+    opacity: 0.8;
 }

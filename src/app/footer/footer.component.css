@@ -7,7 +7,7 @@
 }
 .footer-menu {
     display: flex;
-    padding-left: 110px;
+    padding-left: 0;
 }
 .footer-menu-container {
     position: relative;
