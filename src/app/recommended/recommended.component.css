@@ -18,6 +18,9 @@ a {
     padding-left: 100px;
     padding-top: 50px;
 }
+.hashtagcontainer {
+    display: flex;
+}
 .hashtag p {
     font-size: 16px;
     text-align: left;
@@ -131,6 +134,34 @@ a {
 }
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 576px) {
+    .category-tittle {
+        display: initial;
+    }
+    .category-name {
+        padding-left: 0;
+        text-align: center;
+    }
+    .hashtagcontainer{
+        padding-bottom: 30px;       
+    }
+    .hashtag {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hashtag p {
+        text-align: center;
+        padding-top: 0;
+    }
+    .hashtag:nth-child(1){
+        margin-right: 0;
+    }
+    .hashtag:nth-child(2){
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .hashtag:last-child{
+        margin-left: 0;
+    }
     .column {
         width: 100%;
     }

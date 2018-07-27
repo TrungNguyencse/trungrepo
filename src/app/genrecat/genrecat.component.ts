@@ -18,6 +18,7 @@ export class GenrecatComponent implements OnInit {
           $('#dropdown-trigger').toggleClass("whitebackground");
           $('#caret').toggleClass("fa-caret-down");
           $('#caret').toggleClass("fa-caret-up");
+          event.preventDefault();
       });
   });
       /*Smooth Scrolling*/
