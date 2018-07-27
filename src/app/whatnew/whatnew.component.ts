@@ -11,11 +11,12 @@ export class WhatnewComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(function(){
-      $(".movie-detail").css({'height':($(".movie-thumbnail").height()+'px')});
+      $(".movie-detail").css({'height':($(".movie-list-item").height()+'px')});
+      $(".movie-detail").css({'width':($(".movie-list-item").width()+'px')});
     })
     $(window).resize(function(){
-      $(".movie-detail").css({'height':($(".movie-thumbnail").height()+'px')});
+      $(".movie-detail").css({'height':($(".movie-list-item").height()+'px')});
+      $(".movie-detail").css({'width':($(".movie-list-item").width()+'px')});
     })
   }
-
 }

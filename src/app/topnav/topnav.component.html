@@ -1,26 +1,32 @@
 <div class="top-nav">
-  <div class="top-nav__logo">
+  <!-- Begin element-->
+  <div class="col-md-4 top-nav__logo">
       <img class="navbar-brand" src="../assets/img/logo.png">
   </div>
-  <form class="top-nav__searchcontainer">
-    <button class="top-nav__searchcontainer--search" type="submit"><i class="fa fa-search"></i></button>
-    <input class="top-nav__searchcontainer--searchbar" type="text">
-  </form>
-  <div class="languages">
+  <div class="col-md-5">
+      <form class="top-nav__searchcontainer">
+          <button class="top-nav__searchcontainer--search" type="submit"><i class="fa fa-search"></i></button>
+          <input class="top-nav__searchcontainer--searchbar" type="text">
+        </form>
+  </div>
+  <div class="languages col-md-1">
     <span class="current" title="English"><p>ENG</p></span>
     <ul class="options">
       <li><a href="#">ENG</a></li>
       <li><a href="#">CHI</a></li>   
     </ul>
   </div>
-  <div class="top-nav__howdy">
-    <div class="avatar"><img src="../assets/img/avatar.png"></div>
-    <div class="username">
-      <span class="current" title="Sign In"><p>Sign In</p></span>
-      <ul class="options">
-        <li><button type="button" class="popup-signin-btn" data-toggle="modal" data-target="#popUpSignin">Sign In</button></li>
-        <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Up</button></li>   
-      </ul>
+  <div class="col-md-2 top-nav__howdy">
+    <div class="howdy-container">
+        <div class="avatar"><img src="../assets/img/avatar.png"></div>
+        <div class="username">
+          <span class="current" title="Sign In"><p>Sign In</p></span>
+          <ul class="options">
+            <li><button type="button" class="popup-signin-btn" data-toggle="modal" data-target="#popUpSignin">Sign In</button></li>
+            <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Up</button></li>   
+          </ul>
+        </div>
     </div>
   </div>
+  <!-- End element-->
 </div>

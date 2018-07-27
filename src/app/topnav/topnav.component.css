@@ -8,11 +8,13 @@
     position: fixed;
     z-index: 3000;
 }
+
 .navbar-brand {
     padding-left: 100px;
 }
 .top-nav__searchcontainer {
-    margin-left: 40%; /*media*/
+ /*media*/
+    float: right;
     display: flex;
     margin-top: 12px;
     width: 340px;
@@ -21,6 +23,7 @@
     border-radius: 100px;
     background-color: #ffbc00;
     vertical-align: center;
+    margin-right: 30px;
 }
 .top-nav__searchcontainer--searchbar {
     width: 80%;
@@ -47,7 +50,6 @@
 .languages {
     position: relative;
     display: inline-block;
-    padding-right: 20px;
 }
 .languages:after {
     content: "";
@@ -74,18 +76,18 @@
     object-fit: contain;
     border-radius: 100px;
     background-color: #ffbc00;
+    float: right;
 }
 .languages ul {
     background: white;
     display: none;
-    left: 0px;
+    right: 15px;
     position: absolute;
     margin: 0;
     padding: 3px 0;
     list-style: none;
     font-size: 13px;
     top: 100%;
-    margin-left: 50px;
     box-shadow: 0px 1px 2px 1px #888888;
     border: 1px solid gray;
     border-radius: 4px;
@@ -113,8 +115,9 @@
 /*end language selector */
 
 /*howdy*/
-.top-nav__howdy {
+.howdy-container {
     display: flex;
+    float: left;
 }
 .avatar {
     margin-top: 12px;
@@ -163,7 +166,7 @@
     padding: 3px 0;
     list-style: none;
     font-size: 13px;
-    top: 100%;
+    top: 127%;
     margin-left: 50px;
     box-shadow: 0px 1px 2px 1px #888888;
     border: 1px solid gray;
@@ -225,6 +228,18 @@
     text-decoration: none;
     cursor: pointer;
 }
+/* Extra small devices (portrait phones, less than 576px)*/
+@media screen and (max-width: 575px) { }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media screen and (max-width: 767px) { }
+
+/* Medium devices (tablets, less than 992px)*/
+@media screen and (max-width: 991px) { }
+
+/* Large devices (desktops, less than 1200px)*/
+@media screen and (max-width: 1199px) { }
+
 
 
 

@@ -77,7 +77,6 @@
     font-weight: bold;
     color: black;
     padding: 10px 0 10px 100px;
-    transition: font-size 0.5s;
 }
 .dropdown-trigger-hide p {
     font-size: 17px;
@@ -91,11 +90,11 @@
 .removehyperlink {
     text-decoration: none !important;
 }
-a p:hover {
+/*a p:hover {
     font-size: 20px;
     padding-top: 6px;
     padding-bottom: 6px;
-}
+}*/
 a p:focus, a p:active {
     color: white;
 } 

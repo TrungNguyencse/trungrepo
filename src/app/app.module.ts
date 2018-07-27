@@ -14,6 +14,7 @@ import { RecommendedComponent } from './recommended/recommended.component';
 import { ChannelComponent } from './channel/channel.component';
 import { LikedvideoComponent } from './likedvideo/likedvideo.component';
 import { FooterComponent } from './footer/footer.component';
+import { NewnavbarComponent } from './newnavbar/newnavbar.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FooterComponent } from './footer/footer.component';
     RecommendedComponent,
     ChannelComponent,
     LikedvideoComponent,
-    FooterComponent
+    FooterComponent,
+    NewnavbarComponent
   ],
   imports: [
     BrowserModule,
