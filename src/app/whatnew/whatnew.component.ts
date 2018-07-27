@@ -18,5 +18,6 @@ export class WhatnewComponent implements OnInit {
       $(".movie-detail").css({'height':($(".movie-list-item").height()+'px')});
       $(".movie-detail").css({'width':($(".movie-list-item").width()+'px')});
     })
+    
   }
 }
