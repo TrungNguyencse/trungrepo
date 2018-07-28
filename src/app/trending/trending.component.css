@@ -21,7 +21,24 @@
   display: flex;
 }
 /*slick slider*/
+.slider a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: table-row;
+}
+.slider a:focus, .slider a:active{
+  outline: none;
+}
+.slider a:first-child {
+  margin-left: 18px;
+}
+.slider a:last-child {
+  margin-right: 0;
+}
 .slider {
+  margin-top: 30px;
   width: 88%;
   margin: 0 auto;
 }
@@ -77,6 +94,15 @@
   float: left;
   margin: 5px;
 }
+/*Slick slider item styling*/
+.videobox {
+  background-color: black;
+}
+.movie-info {
+  padding-top: 20px;
+}
+/*End slick slider item styling*/
+
 /*end slick slider*/
 /*video gallery 
 li {

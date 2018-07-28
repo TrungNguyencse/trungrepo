@@ -48,27 +48,27 @@ export class TrendingComponent implements OnInit {
       $('.responsive').slick({
           infinite: true,
           speed: 300,
-          autoplay: true,
+          //autoplay: true,
           slidesToShow: 4,
           slidesToScroll: 1,
           responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 3,
-                    slidesToScroll: 3,
+                    slidesToScroll: 1,
                     infinite: true,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2
+                    slidesToScroll: 1
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 576,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
