@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, AfterViewChecked } from '@angular/core';
-
+import 'slick-carousel/slick/slick';
 
 @Component({
   selector: 'app-root',
