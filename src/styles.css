@@ -5,3 +5,15 @@ body {
     background-color: #212121;
     overflow-x: hidden;
 }
+/*app-trending: custommize slick arrows */
+app-trending .slick-prev, app-trending .slick-next {
+    width: 70px;
+    height: 70px;
+    top: 35%;
+}
+app-trending .slick-prev {
+    left: 17px;
+}
+app-trending .slick-next {
+    right: 39px;
+}

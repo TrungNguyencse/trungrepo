@@ -11,13 +11,43 @@ export class WhatnewComponent implements OnInit {
 
   ngOnInit() {
     $(document).ready(function(){
-      $(".movie-detail").css({'height':($(".movie-list-item").height()+'px')});
-      $(".movie-detail").css({'width':($(".movie-list-item").width()+'px')});
+      //$(".movie-detail").css({'height':($(".slick-slide").height()+'px')});
+      //$(".movie-detail").css({'width':($(".slick-slide").width()+'px')});
+      $('.category-slick').slick({
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        responsive: [
+          {
+              breakpoint: 1200,
+              settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+              }
+          },
+          {
+              breakpoint: 576,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+          }
+        ]
+      });
     })
     $(window).resize(function(){
-      $(".movie-detail").css({'height':($(".movie-list-item").height()+'px')});
-      $(".movie-detail").css({'width':($(".movie-list-item").width()+'px')});
+      //$(".movie-detail").css({'height':($(".slick-slide").height()+'px')});
+      //$(".movie-detail").css({'width':($(".slick-slide").width()+'px')});
     })
+
     
   }
 }

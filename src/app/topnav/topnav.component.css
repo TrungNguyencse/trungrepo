@@ -235,7 +235,17 @@
 @media screen and (max-width: 767px) { }
 
 /* Medium devices (tablets, less than 992px)*/
-@media screen and (max-width: 991px) { }
+@media screen and (max-width: 991px) {
+    .top-nav__searchcontainer {
+        display: none;
+    }
+    .languages, .languages:after {
+        display: none;
+    }
+    .navbar-brand {
+        padding-left: 10px;
+    }
+}
 
 /* Large devices (desktops, less than 1200px)*/
 @media screen and (max-width: 1199px) { }

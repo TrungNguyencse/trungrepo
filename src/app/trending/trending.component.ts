@@ -45,10 +45,10 @@ export class TrendingComponent implements OnInit {
     });*/
     $(document).ready(function () {
       //------------------------------
-      $('.responsive').slick({
+      $('.trending-slick').slick({
           infinite: true,
           speed: 300,
-          //autoplay: true,
+          autoplay: true,
           slidesToShow: 4,
           slidesToScroll: 1,
           responsive: [

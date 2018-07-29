@@ -10,19 +10,18 @@ export class GenrecatComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    $(document).ready(function() {
-      $(".dropdown-button").click(function() {
-          $("#cbp-hrsub-hide").slideToggle();
-          $('#dropdown-trigger').toggleClass("dropdown-trigger-hide");
-          $('#dropdown-trigger').toggleClass("dropdown-trigger");
-          $('#dropdown-trigger').toggleClass("whitebackground");
-          $('#caret').toggleClass("fa-caret-down");
-          $('#caret').toggleClass("fa-caret-up");
-          event.preventDefault();
-      });
-  });
+    $(document).ready(function(){
+      $('.genrecat-title').click(function(){
+        $('.genrecat-title').css("display", "none");
+        $('.genrecat-collapse').css("display", "block")
+      })
+      $('.caret-up').click(function(){
+        $('.genrecat-title').css("display", "block");
+        $('.genrecat-collapse').css("display", "none")
+      })
+    })
       /*Smooth Scrolling*/
-    $(function() {
+    /$(function() {
       $("a[href*='#']:not([href='#'])").click(function() {
         var target = $(this).attr("href");
         $('html,body').stop().animate({scrollTop: $(target).offset().top}, 1000);

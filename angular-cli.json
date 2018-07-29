@@ -18,8 +18,7 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "../node_modules/npm-font-open-sans/open-sans.css", "../node_modules/slick-carousel/slick/slick-theme.css", "../node_modules/slick-carousel/slick/slick.css"
+        "../node_modules/npm-font-open-sans/open-sans.css", "../node_modules/slick-carousel/slick/slick-theme.css", "../node_modules/slick-carousel/slick/slick.css", "styles.css"
       ],
       "scripts": ["../node_modules/jquery/dist/jquery.min.js", "../src/style/bootstrap-4.1.2-dist/js/bootstrap.min.js", "../node_modules/slick-carousel/slick/slick.min.js"],
       "environments": {
