@@ -1,6 +1,12 @@
 a {
     text-decoration: none;
 }
+.nonedisplay {
+    display: none;
+}
+.blockdisplay {
+    display: block;
+}
 /*Rework*/
 /*normal view*/
 /*category menu*/
@@ -60,6 +66,7 @@ a {
 }
 .genrecat-title p{
     padding-top: 10px;
+    font-size: 14px;
 }
 .genrecat-title img {
     position: absolute;

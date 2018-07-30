@@ -13,11 +13,11 @@ export class GenrecatComponent implements OnInit {
     $(document).ready(function(){
       $('.genrecat-title').click(function(){
         $('.genrecat-title').css("display", "none");
-        $('.genrecat-collapse').css("display", "block")
+        $('.genrecat-collapse').slideDown();
       })
       $('.caret-up').click(function(){
         $('.genrecat-title').css("display", "block");
-        $('.genrecat-collapse').css("display", "none")
+        $('.genrecat-collapse').slideUp();
       })
     })
       /*Smooth Scrolling*/

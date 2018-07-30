@@ -124,7 +124,7 @@ a {
     opacity: 0.4;
 }
  .slider a:hover .movie-detail {
-    opacity: 0.6;
+    opacity: 0.8;
 }
   /*End movie detail that shows up when hover on the movie box*/
   /*End slick slider item styling*/
