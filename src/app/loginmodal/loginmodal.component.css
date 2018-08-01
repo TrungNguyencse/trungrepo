@@ -12,6 +12,7 @@
 }
 .close {
     padding-right: 60px;
+    outline: none;
 }
 .login-logo {
     margin-left: 60px;

@@ -4,6 +4,7 @@
 body {
     background-color: #212121;
     overflow-x: hidden;
+    font-family: 'Open Sans';
 }
 /*app-trending: custommize slick arrows */
 app-trending .slick-prev, app-trending .slick-next {
@@ -17,3 +18,4 @@ app-trending .slick-prev {
 app-trending .slick-next {
     right: 39px;
 }
+/*End app-trending: custommize slick arrows */

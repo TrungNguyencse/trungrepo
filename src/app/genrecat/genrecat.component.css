@@ -67,6 +67,7 @@ a {
 .genrecat-title p{
     padding-top: 10px;
     font-size: 14px;
+    font-weight: bold;
 }
 .genrecat-title img {
     position: absolute;

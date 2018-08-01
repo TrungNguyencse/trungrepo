@@ -2,11 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+//import { AppRoutingModule } from './app-routing.module';
+//import {Angular2SocialLoginModule} from "angular2-social-login";
 
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
 import { CarouselComponent } from './carousel/carousel.component';
-import { LoginmodalComponent } from './loginmodal/loginmodal.component';
+import { LoginmodalComponent } from './loginmodal/loginmodal.component';/*facebook login*/
 import { GenrecatComponent } from './genrecat/genrecat.component';
 import { TrendingComponent } from './trending/trending.component';
 import { WhatnewComponent } from './whatnew/whatnew.component';
@@ -21,7 +23,6 @@ import { FooterComponent } from './footer/footer.component';
     TopnavComponent,
     CarouselComponent,
     LoginmodalComponent,
-    LoginmodalComponent,
     GenrecatComponent,
     TrendingComponent,
     WhatnewComponent,
@@ -33,9 +34,11 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
   ],
-  providers: [],
+  providers: [AppComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

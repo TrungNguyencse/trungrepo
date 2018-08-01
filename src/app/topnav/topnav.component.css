@@ -3,7 +3,7 @@
     height: 56px;
     margin: 0 auto;
     object-fit: contain;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     position: fixed;
     z-index: 3000;
@@ -150,7 +150,6 @@
     width: 108px;
     height: 32px;
     object-fit: contain;
-    background-color:  black;
     color: white;
     transition: color 0.5s;
 }
