@@ -26,14 +26,20 @@ export class LoginmodalComponent implements OnInit {
     (<any>window).FB.login(function(response) {
         if (response.authResponse) {
         console.log('Welcome!  Fetching your information.... ');
-        FB.api('/me', function(response) {
-          console.log('Good to see you, ' + response.name + '.');
+        (<any>window).FB.api('/me', 'GET', {fields: 'name,id,picture.width(150).height(150)'}, function(response) {
+          $("#socialimage").attr("src", response.picture.data.url);
+          $("#socialname").text(response.name);
         });
         } else {
         console.log('User cancelled login or did not fully authorize.');
         }
     });
   }
-
+  /*end login with facebook*/
+/*login with google*/
+  onLoginGoogle(){
+    console.log( (<any>window).auth2.signIn())
+  }
+/*end login with google*/
 }
 

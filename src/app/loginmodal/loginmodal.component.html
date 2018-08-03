@@ -1,3 +1,4 @@
+
 <div class="modal fade" id="popUpSignin">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -6,7 +7,7 @@
         </div>
         <div class="modal-body">
           <div class="login-logo">
-            <img src="../assets/img/loginlogo.png">
+            <img ng-show="!onLoginGoogle() || !checkLoginState()" src="../assets/img/loginlogo.png">
           </div>
           <div class="signin-title"><p>LOGIN/SIGNUP</p></div>
           <div class="signinwith">
@@ -14,10 +15,10 @@
               <span class="social fa fa-facebook-f"></span>
               <span><p>Sign in with Facebook</p></span>
             </button>
-            <button type="button" class="signinwith__google">
+            <button (click)="onLoginGoogle()" id="customBtn" class="customGPlusSignIn" type="button" class="signinwith__google">
               <span class="social fa fa-google-plus"></span>
               <span><p>Sign in with Google+</p></span>
-            </button>             
+            </button>
           </div>
         </div>
       </div>

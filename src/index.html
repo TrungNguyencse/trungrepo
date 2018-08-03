@@ -5,27 +5,52 @@
   <title>MovieWebsite</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="google-signin-client_id" content="723275863626-nj3uiabcnh2nl0ngt405tuuo55ki7msv.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/api:client.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <!--<script src="https://apis.google.com/js/platform.js" async defer></script>
-    <div class="g-signin2" data-onsuccess="onSignIn">Sign in with google</div>
-    <a href="#" onclick="signOut();">Sign out</a>
-<script>
-  function signOut() {
+ <script>
+  var googleUser = {};
+  var startApp = function() {
+    gapi.load('auth2', function(){
+      // Retrieve the singleton for the GoogleAuth library and set up the client.
+      auth2 = gapi.auth2.init({
+        client_id: '1075518572128-v450pag3dqatmoeafm5n85gitvfg8574.apps.googleusercontent.com',
+        cookiepolicy: 'single_host_origin',
+        // Request scopes in addition to 'profile' and 'email'
+        //scope: 'additional_scope'
+      });
+      attachSignin(document.getElementById('customBtn'));
+    });
+  };
+
+  function attachSignin(element) {
+    console.log(element.id);
+    auth2.attachClickHandler(element, {},
+        function(googleUser) {
+          console.log("howdy,",googleUser.getBasicProfile().getName());
+          $("#socialimage").attr("src",googleUser.getBasicProfile().getImageUrl());
+          $("#socialname").text(googleUser.getBasicProfile().getName());
+        }, function(error) {
+          alert("unauthorized");
+        });
+  }
+  /*Google sign out */
+  function ggsignOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
   }
-</script>-->
+ </script>
+  <script>startApp();</script>
+
   <app-root>Loading...</app-root>
   <!--Facebook login-->
   <script>
    window.fbAsyncInit = function() {
       FB.init({
-        appId            : '245309966087334',
+        appId            : '2105928389675689',
         autoLogAppEvents : true,
         xfbml            : true,
         version          : 'v3.1'
@@ -39,31 +64,6 @@
       js.src = "https://connect.facebook.net/en_US/sdk.js";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-
-
-// FB.login(function(response) {
-//     if (response.authResponse) {
-//      console.log('Welcome!  Fetching your information.... ');
-//      FB.api('/me', function(response) {
-//        console.log('Good to see you, ' + response.name + '.');
-//      });
-//     } else {
-//      console.log('User cancelled login or did not fully authorize.');
-//     }
-// });
-// function checkLoginState(){
-  
-// FB.login(function(response) {
-//     if (response.authResponse) {
-//      console.log('Welcome!  Fetching your information.... ');
-//      FB.api('/me', function(response) {
-//        console.log('Good to see you, ' + response.name + '.');
-//      });
-//     } else {
-//      console.log('User cancelled login or did not fully authorize.');
-//     }
-// });
-// }
 </script>
 <!--End Facebook login-->
 </body>

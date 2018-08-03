@@ -18,13 +18,15 @@
   </div>
   <div class="col-md-2 top-nav__howdy">
     <div class="howdy-container">
-        <div class="avatar"><img src="../assets/img/avatar.png"></div>
+        <div class="avatar"><img id="socialimage" [src]="avatar"></div>
         <div class="username">
-          <span class="current popup-signin-btn" data-toggle="modal" data-target="#popUpSignin" title="Sign In"><p>Sign In</p></span>
-          <!--<ul class="options">
+          <span id="socialname" class="current popup-signin-btn" data-toggle="modal" data-target="#popUpSignin" title="Sign In"><p>Sign In</p></span>
+          <ul>
             <li><button type="button" class="popup-signin-btn" data-toggle="modal" data-target="#popUpSignin">Sign In</button></li>
-            <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Up</button></li>   
-          </ul>-->
+            <li><button (click)="ggsignOut()" type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Out</button></li>
+            <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Profile</button></li>
+            <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Liked Videos</button></li>  
+          </ul>
         </div>
     </div>
   </div>

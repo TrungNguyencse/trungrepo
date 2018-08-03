@@ -7,6 +7,7 @@ declare var $: any;
 })
 export class TopnavComponent implements OnInit {
 
+  avatar:any = "../assets/img/avatar.png";
   constructor() { }
 
   ngOnInit() {
@@ -44,6 +45,7 @@ export class TopnavComponent implements OnInit {
       })
      });
      // Sign in + Sign up
+     
   }
     
 }

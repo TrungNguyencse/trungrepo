@@ -123,6 +123,10 @@
     margin-top: 12px;
     margin-left: 40px;
 }
+#socialimage {
+    width: 32px;
+    border-radius: 30px;
+}
 .username {
     position: relative;
     display: inline-block;
@@ -186,9 +190,6 @@
 }
 .popupbtn {
     border: none;
-}
-.username ul button:focus {
-    background: tomato;
 }
 .username ul button.sel {
     color: #ccc;
