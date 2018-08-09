@@ -1,18 +1,40 @@
-import { Component, OnInit } from '@angular/core';
-declare var $:any;
+import { Component, OnInit, Input , OnChanges } from '@angular/core';
+declare var $ : any;
+
+
+
+
+
 @Component({
-  selector: 'app-channel',
-  templateUrl: './channel.component.html',
-  styleUrls: ['./channel.component.css']
+  selector: 'app-category',
+  templateUrl: './category.component.html',
+  styleUrls: ['./category.component.css']
 })
-export class ChannelComponent implements OnInit {
+export class CategoryComponent implements OnInit {
+
+  categories = [
+    { id: "whatnew", name: "WHAT'S NEW" },
+    { id: "recommended", name: "RECOMMENDED" },
+    { id: "channel", name: "CHANNEL" },
+    { id: "likedvideo", name: "LIKED VIDEOS" }
+  ];
+  /*fake category data*/
+
+  @Input() inputfilm;
 
   constructor() { }
 
+  ngOnChanges(){
+    if(this.inputfilm){
+      console.log(this.inputfilm);
+    }
+  }
   ngOnInit() {
+    setTimeout(function(){
+
+      console.log(this.inputfilm)
+    },5000);
     $(document).ready(function(){
-      /*$(".movie-detail").css({'height':($(".slick-slide").height()+'px')});
-      $(".movie-detail").css({'width':($(".slick-slide").width()+'px')});*/
       $('.category-slick').slick({
         infinite: true,
         speed: 300,
@@ -43,12 +65,6 @@ export class ChannelComponent implements OnInit {
         ]
       });
     })
-    $(window).resize(function(){
-      /*$(".movie-detail").css({'height':($(".slick-slide").height()+'px')});
-      $(".movie-detail").css({'width':($(".slick-slide").width()+'px')});*/
-    })
-
-    
   }
 
 }

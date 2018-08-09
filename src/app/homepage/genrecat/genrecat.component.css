@@ -11,8 +11,9 @@ a {
 /*normal view*/
 /*category menu*/
 .genre-and-category {
-    padding: 50px 100px;
-    width: 90%;;
+    padding: 50px 0px;
+    width: 80%;
+    margin: 0 auto;
 }
 .category-content {
     display: flex;

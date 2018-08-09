@@ -13,8 +13,8 @@
 .footer-menu-container {
     position: relative;
     display: flex;
-    padding: 0 110px;
-    width: 100%;
+    margin: 0 auto;
+    width: 80%;
 }
 .footer-menu a {
     color: white;
@@ -33,7 +33,7 @@
     display: flex;
     position: absolute;
     top: 40px;
-    right: 190px;
+    right: 0px;
 }
 .social-contact li a{
     width: 36px;

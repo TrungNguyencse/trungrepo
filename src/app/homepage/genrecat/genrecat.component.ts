@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input , OnChanges } from '@angular/core';
 declare var $: any;
 @Component({
   selector: 'app-genrecat',
@@ -6,10 +6,21 @@ declare var $: any;
   styleUrls: ['./genrecat.component.css']
 })
 export class GenrecatComponent implements OnInit {
+  @Input() inputcategory;
+  ngOnChanges(){
+    if(this.inputcategory){
+      console.log(this.inputcategory);
+    }
+  }
 
   constructor() { }
 
   ngOnInit() {
+    setTimeout(function(){
+
+      console.log(this.inputcategory)
+    },5000);
+
     $(document).ready(function(){
       $('.genrecat-title').click(function(){
         $('.genrecat-title').css("display", "none");

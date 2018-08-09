@@ -1,0 +1,24 @@
+<!--<div class="films" href="#" *ngFor="let film of films">
+        <div style="color: white" class="movie-title"><p>{{film.title}}</p></div>
+</div>-->
+<div class="slider category-slick" role="toolbar">
+    <a href="#" *ngFor="let movie of inputfilm">
+        <div class="slickslider-item">
+          <div class="movie-box">
+              <img src={{movie.poster}}>
+              <div class="viewcount"><p>{{movie.views}} views</p></div>
+          </div>
+          <div class="movie-detail">
+              <div class="sypnosis">
+                  <img src="../assets/img/heart.png">
+                  <span><h5>SYPNOSIS</h5></span>
+              </div>
+              <p [innerHTML]="movie.sypnosis.en"></p>
+          </div>
+        </div>
+        <div class="movie-title">
+            <p [innerHTML]="movie.title.en"></p>
+        </div>
+    </a> 
+</div>
+  

@@ -115,6 +115,10 @@
 /*end language selector */
 
 /*howdy*/
+.top-nav__howdy {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
 .howdy-container {
     display: flex;
     float: left;
@@ -144,6 +148,7 @@
     border-right: 4px solid transparent;
     z-index: 1;
     font-size: 50px;
+    display: none;
 }
 .username .current {
     display: inline-block;
@@ -159,6 +164,12 @@
 }
 .username .current:hover {
     color: #039bb3;
+}
+.dropdown-arrow {
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 35px;
 }
 .username ul {
     background: white;
@@ -178,6 +189,7 @@
     z-index: 3;
 }
 .username ul button {
+    outline: none;
     text-decoration: none;
     display: inline-block;
     width: 108px;
@@ -229,7 +241,12 @@
     cursor: pointer;
 }
 /* Extra small devices (portrait phones, less than 576px)*/
-@media screen and (max-width: 575px) { }
+@media screen and (max-width: 575px) {
+    .col-md-5 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+ }
 
 /* Small devices (landscape phones, less than 768px)*/
 @media screen and (max-width: 767px) { }

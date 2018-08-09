@@ -2,20 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-//import { AppRoutingModule } from './app-routing.module';
-//import {Angular2SocialLoginModule} from "angular2-social-login";
-
 import { AppComponent } from './app.component';
 import { TopnavComponent } from './topnav/topnav.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { LoginmodalComponent } from './loginmodal/loginmodal.component';/*facebook login*/
-import { GenrecatComponent } from './genrecat/genrecat.component';
-import { TrendingComponent } from './trending/trending.component';
-import { WhatnewComponent } from './whatnew/whatnew.component';
-import { RecommendedComponent } from './recommended/recommended.component';
-import { ChannelComponent } from './channel/channel.component';
-import { LikedvideoComponent } from './likedvideo/likedvideo.component';
+import { CarouselComponent } from './homepage/carousel/carousel.component';
+import { LoginmodalComponent } from './loginmodal/loginmodal.component';
+import { GenrecatComponent } from './homepage/genrecat/genrecat.component';
+import { TrendingComponent } from './homepage/trending/trending.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { CategoryComponent } from './homepage/category/category.component';
+import { FilmComponent } from './homepage/category/film/film.component';
+import { ApiService } from "./api.service";
 
 @NgModule({
   declarations: [
@@ -25,19 +22,20 @@ import { FooterComponent } from './footer/footer.component';
     LoginmodalComponent,
     GenrecatComponent,
     TrendingComponent,
-    WhatnewComponent,
-    RecommendedComponent,
-    ChannelComponent,
-    LikedvideoComponent,
-    FooterComponent
+    FooterComponent,
+    HomepageComponent,
+    CategoryComponent,
+    FilmComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
-
+    HttpModule
   ],
-  providers: [AppComponent],
+  providers: [
+    AppComponent,
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

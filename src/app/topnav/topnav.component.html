@@ -21,9 +21,10 @@
         <div class="avatar"><img id="socialimage" [src]="avatar"></div>
         <div class="username">
           <span id="socialname" class="current popup-signin-btn" data-toggle="modal" data-target="#popUpSignin" title="Sign In"><p>Sign In</p></span>
+          <span class="fa fa-caret-down dropdown-arrow" ></span>
           <ul>
             <li><button type="button" class="popup-signin-btn" data-toggle="modal" data-target="#popUpSignin">Sign In</button></li>
-            <li><button (click)="ggsignOut()" type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Out</button></li>
+            <li><button (click)="logout(); ggsignOut();" type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Sign Out</button></li>
             <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Profile</button></li>
             <li><button type="button" class="popup-signup-btn" data-toggle="modal" data-target="#popUpSignup">Liked Videos</button></li>  
           </ul>

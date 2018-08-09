@@ -6,16 +6,20 @@ body {
     overflow-x: hidden;
     font-family: 'Open Sans';
 }
+.container-fluid {
+    padding: 0;
+}
 /*app-trending: custommize slick arrows */
-app-trending .slick-prev, app-trending .slick-next {
+app-trending .slick-prev, app-trending .slick-next, app-film .slick-prev, app-film .slick-next {
     width: 70px;
     height: 70px;
     top: 35%;
+    outline: none;
 }
-app-trending .slick-prev {
-    left: 17px;
+app-trending .slick-prev, app-film .slick-prev {
+    left: 9px;
 }
-app-trending .slick-next {
-    right: 39px;
+app-trending .slick-next, app-film .slick-next {
+    right: 26px;
 }
 /*End app-trending: custommize slick arrows */

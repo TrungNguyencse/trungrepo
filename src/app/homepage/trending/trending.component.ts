@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 declare var $: any;
 @Component({
   selector: 'app-trending',
@@ -7,42 +7,11 @@ declare var $: any;
 })
 export class TrendingComponent implements OnInit {
 
+  @Input() inputfilm;
+
   constructor() { }
 
   ngOnInit() {
-    /*$(window).on('load', function(){
-
-      let marginLeft = 0;
-    
-      $('#left').on('click', function(){
-    
-        if (marginLeft >= -300 && marginLeft < 0) {
-    
-          marginLeft = marginLeft + 100;
-    
-          $('.carousel ul').animate({
-            marginLeft: marginLeft + "%"
-          }, 1500);
-    
-        }
-    
-      });
-    
-      $('#right').on('click', function(){
-    
-        if (marginLeft >= -200) {
-    
-          marginLeft = marginLeft - 100;
-    
-          $('.carousel ul').animate({
-            marginLeft: marginLeft + "%"
-          }, 1500);
-    
-        }
-    
-      });
-    
-    });*/
     $(document).ready(function () {
       //------------------------------
       $('.trending-slick').slick({
